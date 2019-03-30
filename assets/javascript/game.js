@@ -44,7 +44,7 @@ document.onkeyup = function(event){
         console.log("computer pick 1", computerGuess);
     }
 
-
+    //this adds information to html itself
     document.getElementById('guess-far').innerHTML = wrongLetters;
     document.getElementById('win').innerHTML = wins;
     document.getElementById('loss').innerHTML =losses;
