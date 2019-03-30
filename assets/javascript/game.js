@@ -1,5 +1,5 @@
 
-var computerChoices = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "x", "z"];
+var computerChoices = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v","w", "x", "y", "z"];
 var computerGuess = computerChoices[Math.floor(Math.random() * computerChoices.length)];
 console.log("computer pick 1", computerGuess);
 // console.log(Math.random()); //showing what it does (decimal times 26)
@@ -26,7 +26,7 @@ document.onkeyup = function(event){
         guessLeft = 9;
         playerPick = "";
         computerGuess = computerChoices[Math.floor(Math.random() * computerChoices.length)];
-        // console.log("computer pick 2", computerGuess);
+        console.log("computer pick 2", computerGuess);
         
 
       
@@ -35,15 +35,13 @@ document.onkeyup = function(event){
         wrongLetters.push(playerPick);
 
     }
-
+    
     if (guessLeft === 0){
         losses++;
         guessLeft = 9;
         wrongLetters = [];
         computerGuess = computerChoices[Math.floor(Math.random() * computerChoices.length)];
-        // console.log("computer pick 1", computerGuess);
-
-
+        console.log("computer pick 1", computerGuess);
     }
 
 
