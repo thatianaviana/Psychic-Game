@@ -25,6 +25,7 @@ document.onkeyup = function(event){
         wins++;
         guessLeft = 9;
         playerPick = "";
+        wrongLetters = [];
         computerGuess = computerChoices[Math.floor(Math.random() * computerChoices.length)];
         console.log("computer pick 2", computerGuess);
         
